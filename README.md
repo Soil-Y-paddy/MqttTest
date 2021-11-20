@@ -50,7 +50,7 @@ MQTTブローカー。**Ubuntuマシン**に以下のコマンドでインスト
 $ sudo apt-get install mosquitto
 $ sudo apt-get install mosquitto-clients
 ```
-### [paho_mqtt](https://github.com/eclipse/paho.mqtt.rust)
+### [paho_mqtt](https://github.com/eclipse/paho.mqtt.python)
 python用のMQTTクライアント。
 **PC**にインストールしておく。
 
