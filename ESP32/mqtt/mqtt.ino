@@ -1,5 +1,5 @@
 #include <arduino.h>
-#include "src/PubSubClient.h"
+#include <PubSubClient.h>
 #include<WiFi.h>
 
 // WiFi
@@ -84,9 +84,8 @@ void connectMqtt()
 
 // Callback
 void callback(char* topic, byte* payload, unsigned int length) {
-  Serial.print("Message arrived [");
-  Serial.print(topic);
-  Serial.print("] ");
+  char strDump[128]="";
+  sprintf(strDump,"Message arrived [%s]", topic);
   for (int i = 0; i < length; i++) {
     Serial.print((char)payload[i]);
   }
